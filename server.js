@@ -590,7 +590,11 @@ if (isProduction) {
 // =========================================
 // Server startup
 // =========================================
-app.listen(PORT, () => {
-  console.log(`[${new Date().toISOString()}] Stadium IQ server running on port ${PORT}`);
-  console.log(`Environment: ${isProduction ? 'production' : 'development'}`);
-});
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`[${new Date().toISOString()}] Stadium IQ server running on port ${PORT}`);
+    console.log(`Environment: ${isProduction ? 'production' : 'development'}`);
+  });
+}
+
+export default app;
