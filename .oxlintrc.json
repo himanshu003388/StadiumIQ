@@ -1,0 +1,16 @@
+{
+  "plugins": ["react", "unicorn", "import"],
+  "rules": {
+    "react/no-danger-with-children": "error",
+    "react/jsx-no-target-blank": "error",
+    "react/no-array-index-key": "warn",
+    "no-console": "warn",
+    "no-debugger": "error",
+    "no-var": "error",
+    "prefer-const": "warn",
+    "unicorn/explicit-length-check": "warn",
+    "unicorn/prefer-modern-math-apis": "warn",
+    "unicorn/no-instanceof-array": "error",
+    "import/no-duplicates": "error"
+  }
+}

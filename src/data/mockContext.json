@@ -1,0 +1,429 @@
+{
+  "gates": [
+    {
+      "id": "A",
+      "density": 0.92,
+      "waitTimeMinutes": 28,
+      "accessible": true,
+      "status": "critical",
+      "direction": "North",
+      "accessibleFeatures": ["wheelchair-ramp", "braille-signage", "hearing-loop", "wide-lane"],
+      "cctvCongestionIndex": 0.94,
+      "flowRatePerMin": 65,
+      "historicalPeakWaitMinutes": 35
+    },
+    {
+      "id": "B",
+      "density": 0.41,
+      "waitTimeMinutes": 5,
+      "accessible": true,
+      "status": "normal",
+      "direction": "North",
+      "accessibleFeatures": ["wheelchair-ramp", "braille-signage"],
+      "cctvCongestionIndex": 0.45,
+      "flowRatePerMin": 22,
+      "historicalPeakWaitMinutes": 15
+    },
+    {
+      "id": "C",
+      "density": 0.74,
+      "waitTimeMinutes": 17,
+      "accessible": false,
+      "status": "watch",
+      "direction": "South",
+      "accessibleFeatures": [],
+      "cctvCongestionIndex": 0.78,
+      "flowRatePerMin": 48,
+      "historicalPeakWaitMinutes": 25
+    },
+    {
+      "id": "D",
+      "density": 0.28,
+      "waitTimeMinutes": 3,
+      "accessible": true,
+      "status": "normal",
+      "direction": "South",
+      "accessibleFeatures": ["wheelchair-ramp", "hearing-loop", "service-animal-relief"],
+      "cctvCongestionIndex": 0.3,
+      "flowRatePerMin": 15,
+      "historicalPeakWaitMinutes": 10
+    },
+    {
+      "id": "E",
+      "density": 0.61,
+      "waitTimeMinutes": 11,
+      "accessible": true,
+      "status": "watch",
+      "direction": "East",
+      "accessibleFeatures": ["wheelchair-ramp", "braille-signage", "wide-lane"],
+      "cctvCongestionIndex": 0.64,
+      "flowRatePerMin": 36,
+      "historicalPeakWaitMinutes": 20
+    },
+    {
+      "id": "F",
+      "density": 0.19,
+      "waitTimeMinutes": 2,
+      "accessible": true,
+      "status": "normal",
+      "direction": "West",
+      "accessibleFeatures": [
+        "wheelchair-ramp",
+        "braille-signage",
+        "hearing-loop",
+        "service-animal-relief",
+        "wide-lane"
+      ],
+      "cctvCongestionIndex": 0.2,
+      "flowRatePerMin": 10,
+      "historicalPeakWaitMinutes": 8
+    }
+  ],
+  "volunteers": [
+    {
+      "id": "V1",
+      "name": "Elena Vargas",
+      "zone": "North",
+      "languages": ["en", "es"],
+      "currentLoad": 2,
+      "maxLoad": 5,
+      "skills": ["first-aid", "crowd-control"],
+      "avatar": "EV",
+      "status": "available"
+    },
+    {
+      "id": "V2",
+      "name": "Marcus Dupont",
+      "zone": "North",
+      "languages": ["en", "fr"],
+      "currentLoad": 5,
+      "maxLoad": 5,
+      "skills": ["security", "tech-support"],
+      "avatar": "MD",
+      "status": "busy"
+    },
+    {
+      "id": "V3",
+      "name": "Sofia Reyes",
+      "zone": "South",
+      "languages": ["en", "es"],
+      "currentLoad": 1,
+      "maxLoad": 5,
+      "skills": ["first-aid", "translation"],
+      "avatar": "SR",
+      "status": "available"
+    },
+    {
+      "id": "V4",
+      "name": "Yuki Tanaka",
+      "zone": "East",
+      "languages": ["en", "ja", "pt"],
+      "currentLoad": 0,
+      "maxLoad": 5,
+      "skills": ["translation", "guest-services"],
+      "avatar": "YT",
+      "status": "available"
+    },
+    {
+      "id": "V5",
+      "name": "Ahmed Al-Rashid",
+      "zone": "East",
+      "languages": ["en", "ar", "fr"],
+      "currentLoad": 3,
+      "maxLoad": 5,
+      "skills": ["security", "crowd-control"],
+      "avatar": "AA",
+      "status": "available"
+    },
+    {
+      "id": "V6",
+      "name": "Priya Sharma",
+      "zone": "West",
+      "languages": ["en", "hi", "ur"],
+      "currentLoad": 0,
+      "maxLoad": 5,
+      "skills": ["first-aid", "guest-services"],
+      "avatar": "PS",
+      "status": "available"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T1",
+      "description": "Wheelchair user needs assistance at Gate A",
+      "zone": "North",
+      "requiredLanguage": "es",
+      "requiredSkill": "first-aid",
+      "priority": "high",
+      "assignedTo": null,
+      "status": "open"
+    },
+    {
+      "id": "T2",
+      "description": "Direct post-match traffic at North Metro entrance",
+      "zone": "North",
+      "requiredLanguage": "en",
+      "requiredSkill": "crowd-control",
+      "priority": "medium",
+      "assignedTo": null,
+      "status": "open"
+    },
+    {
+      "id": "T3",
+      "description": "Arabic-speaking fan needs help at East info desk",
+      "zone": "East",
+      "requiredLanguage": "ar",
+      "requiredSkill": "translation",
+      "priority": "high",
+      "assignedTo": null,
+      "status": "open"
+    },
+    {
+      "id": "T4",
+      "description": "Monitor Gate C density every 10 minutes",
+      "zone": "East",
+      "requiredLanguage": "en",
+      "requiredSkill": "security",
+      "priority": "low",
+      "assignedTo": null,
+      "status": "open"
+    },
+    {
+      "id": "T5",
+      "description": "Distribute water bottles at South Stand Row 40",
+      "zone": "South",
+      "requiredLanguage": "en",
+      "requiredSkill": "guest-services",
+      "priority": "medium",
+      "assignedTo": "V3",
+      "status": "in-progress"
+    },
+    {
+      "id": "T6",
+      "description": "Tech issue with turnstile camera cluster B7",
+      "zone": "North",
+      "requiredLanguage": "en",
+      "requiredSkill": "tech-support",
+      "priority": "high",
+      "assignedTo": null,
+      "status": "open"
+    }
+  ],
+  "transportOptions": [
+    {
+      "id": "TR1",
+      "type": "Subway",
+      "line": "Red Line — Direct",
+      "etaMinutes": 10,
+      "co2e": 5,
+      "capacityLeft": 200,
+      "icon": "subway",
+      "recommended": true
+    },
+    {
+      "id": "TR2",
+      "type": "Shuttle",
+      "line": "Stadium Express — Lot C",
+      "etaMinutes": 15,
+      "co2e": 12,
+      "capacityLeft": 5,
+      "icon": "directions_bus",
+      "recommended": false
+    },
+    {
+      "id": "TR3",
+      "type": "Rideshare",
+      "line": "Pickup Zone 3",
+      "etaMinutes": 8,
+      "co2e": 45,
+      "capacityLeft": 3,
+      "icon": "local_taxi",
+      "recommended": false
+    },
+    {
+      "id": "TR4",
+      "type": "Train",
+      "line": "Amtrak — Northbound 8:45pm",
+      "etaMinutes": 12,
+      "co2e": 8,
+      "capacityLeft": 150,
+      "icon": "train",
+      "recommended": true
+    },
+    {
+      "id": "TR5",
+      "type": "Bike Share",
+      "line": "CitiBike — Station N4",
+      "etaMinutes": 20,
+      "co2e": 0,
+      "capacityLeft": 30,
+      "icon": "pedal_bike",
+      "recommended": false
+    }
+  ],
+  "stadium": {
+    "name": "AT&T Stadium",
+    "city": "Arlington, TX",
+    "capacity": 105000,
+    "currentOccupancy": 89250,
+    "matchStart": "2026-07-08T20:00:00Z",
+    "matchEnd": "2026-07-08T22:00:00Z",
+    "homeTeam": "Brazil",
+    "awayTeam": "France",
+    "score": "2 - 1",
+    "matchPhase": "World Cup 2026 Quarter-Final — 67'",
+    "zones": [
+      {
+        "id": "north",
+        "name": "North Stand",
+        "occupancy": 0.45,
+        "status": "nominal",
+        "capacity": 26250,
+        "x": 175,
+        "y": 40,
+        "w": 150,
+        "h": 70
+      },
+      {
+        "id": "south",
+        "name": "South Stand",
+        "occupancy": 0.85,
+        "status": "busy",
+        "capacity": 26250,
+        "x": 175,
+        "y": 290,
+        "w": 150,
+        "h": 70
+      },
+      {
+        "id": "east",
+        "name": "East Wing",
+        "occupancy": 0.94,
+        "status": "critical",
+        "capacity": 26250,
+        "x": 330,
+        "y": 120,
+        "w": 70,
+        "h": 160
+      },
+      {
+        "id": "west",
+        "name": "West Wing",
+        "occupancy": 0.65,
+        "status": "moderate",
+        "capacity": 26250,
+        "x": 100,
+        "y": 120,
+        "w": 70,
+        "h": 160
+      }
+    ],
+    "sustainability": {
+      "energyDrawMW": 42.5,
+      "waterUsageKLH": 12.1,
+      "wasteDiversionRate": 65,
+      "renewablePercentage": 94,
+      "netZeroProgress": 74,
+      "ecoModeActive": false,
+      "co2SavedKg": 14320,
+      "solarPanelsMW": 8.2
+    },
+    "weather": {
+      "temperature": 32,
+      "conditions": "clear",
+      "humidity": 45,
+      "windSpeed": 12,
+      "feelsLike": 35
+    }
+  },
+  "accessibilityServices": [
+    {
+      "type": "wheelchair-rental",
+      "locations": ["Gate B", "Gate D", "Gate F", "West Wing Lobby"],
+      "available": 85,
+      "description": "Complimentary wheelchair rental available at all accessible gates and major concourse hubs."
+    },
+    {
+      "type": "assistive-listening",
+      "locations": ["Section 104", "Section 208", "Section 315"],
+      "available": true,
+      "description": "Hearing loop receivers available at guest services desks in designated sections."
+    },
+    {
+      "type": "braille-wayfinding",
+      "locations": "All gates, elevators, and restroom entrances",
+      "available": true,
+      "description": "Braille signage installed at all major wayfinding points throughout the stadium."
+    },
+    {
+      "type": "service-animal-relief",
+      "locations": ["Gate D", "Gate F", "North Plaza"],
+      "available": true,
+      "description": "Designated service animal relief areas with waste disposal stations."
+    },
+    {
+      "type": "visual-assistance",
+      "locations": ["Main concourse", "East Wing", "West Wing"],
+      "available": true,
+      "description": "Volunteers with visual assistance training available in high-traffic zones."
+    },
+    {
+      "type": "sign-language",
+      "locations": ["Gate A", "Gate D", "Command Center"],
+      "available": true,
+      "description": "ASL interpreters available on request at guest services desks."
+    }
+  ],
+  "incidents": [
+    {
+      "id": "INC-001",
+      "type": "crowd",
+      "zone": "East Wing",
+      "severity": "critical",
+      "description": "Crowd density anomaly — 94% occupancy, potential crush risk",
+      "timestamp": "2026-07-08T18:42:05Z",
+      "status": "active",
+      "aiRecommendedAction": "Reroute incoming fans via Gate F (West). Deploy Crowd Control Team Alpha to East Wing concourse. Activate variable message signage displaying alternate routes."
+    },
+    {
+      "id": "INC-002",
+      "type": "facility",
+      "zone": "North Stand",
+      "severity": "medium",
+      "description": "Severe congestion at Concourse G Restrooms — 25+ minute queue",
+      "timestamp": "2026-07-08T18:30:12Z",
+      "status": "active",
+      "aiRecommendedAction": "Open temporary facilities in North Plaza parking structure. Update dynamic wayfinding signage on Concourse G to redirect fans to Section 118 facilities."
+    },
+    {
+      "id": "INC-003",
+      "type": "equipment",
+      "zone": "South Stand",
+      "severity": "low",
+      "description": "Automated ticket gate malfunction at Gate 12 — Scanner offline",
+      "timestamp": "2026-07-08T18:15:00Z",
+      "status": "resolved",
+      "aiRecommendedAction": "Remote hardware reset completed successfully. Gate 12 back online."
+    },
+    {
+      "id": "INC-004",
+      "type": "medical",
+      "zone": "West Wing",
+      "severity": "medium",
+      "description": "Fan reported heat exhaustion near Section W22 — medics en route",
+      "timestamp": "2026-07-08T19:05:00Z",
+      "status": "active",
+      "aiRecommendedAction": "Dispatch medical team from Medic Station 3 (closest). Open cooling station at West Wing entrance. Alert nearby volunteers V6 (Priya Sharma) to assist."
+    },
+    {
+      "id": "INC-005",
+      "type": "security",
+      "zone": "South Stand",
+      "severity": "low",
+      "description": "Unauthorized pitch-side access attempt — fan stopped by stewards",
+      "timestamp": "2026-07-08T19:12:00Z",
+      "status": "resolved",
+      "aiRecommendedAction": "Fan escorted to security office. Incident logged. No further action required."
+    }
+  ]
+}
